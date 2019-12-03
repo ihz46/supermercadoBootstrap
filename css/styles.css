@@ -1,0 +1,234 @@
+/*
+Hoja de estilos personalizada
+@author: iñigo hernandez 
+
+
+*/
+
+@import url('css/reset.css');
+@import url('css/normalice.css');
+
+
+
+/****************ETIQUETAS*************/
+body {
+    font-family: 'Montserrat', sans-serif;
+    ;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+    margin: 50px;
+}
+
+
+/****************LAYOUT*************/
+nav {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+nav a {
+    text-transform: uppercase;
+}
+
+.nav li {
+    text-align: center;
+    width: 100%;
+}
+
+
+/****************ICONOS*************/
+.iconos-footer {
+    font-size: 2em;
+}
+
+
+/****************FORMULARIOS*************/
+
+
+.form-group {
+    background-color: #E6E6E6;
+    border: 2px solid #a1cfff;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+input:valid {
+    color: green;
+}
+
+input:invalid {
+    color: red;
+}
+
+input#number {
+    text-align: center;
+    border: none;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 0px;
+    width: 40px;
+    height: 39px;
+}
+
+form #decrease {
+    margin-right: -4px;
+    border-radius: 8px 0 0 8px;
+    padding-bottom: 26px;
+}
+
+form #increase {
+    margin-left: -4px;
+    border-radius: 0 8px 8px 0;
+    padding-bottom: 26px;
+}
+
+form #input-wrap {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+/****************BOTÓN SUBIR*************/
+.boton-subir {
+    display: none;
+    background: rgb(0, 23, 151);
+    border: thin solid #fff;
+    border-radius: 3px;
+    position: fixed;
+    right: 15px;
+    bottom: 2px;
+    z-index: 999999999;
+}
+
+.boton-subir:hover {
+    box-shadow: 0px 2px 10px 0px rgba(255, 255, 255, 0.75);
+}
+
+.boton-subir i {
+    color: #fff;
+    font-size: 2em;
+    padding: 10px 10px 10px 7px;
+}
+
+.boton-subir i:hover {
+    color: orange;
+}
+
+/****************IMÁGENES*************/
+td img {
+    height: 200px;
+    width: 200px;
+}
+
+.imagen {
+    height: 250px;
+    width: 200px;
+}
+
+
+/****************PRODUCTO*************/
+.producto {
+    box-sizing: border-box;
+    display: flex;
+    max-width: 192px;
+    max-height: 500px;
+}
+
+.precio-tachado {
+    text-decoration: line-through;
+
+}
+
+.precio-final {
+    color: red;
+    font-size: 1.5em;
+    font-weight: 500;
+    position: absolute;
+    bottom: 194px;
+    right: 35px;
+}
+
+.info-producto {
+    color: rgb(128, 126, 126);
+    font-size: 0.8em;
+}
+
+
+.descuento {
+    background-color: #ed5a5a;
+    border: 0px solid #ed5a5a;
+    border-radius: 30px;
+    height: 33px;
+    width: 60px;
+    position: relative;
+    left: 5px;
+    top: 5px;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.letra-boton {
+    color: white;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+.cantidad {
+
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.value-button {
+    display: inline-block;
+    border: 1px solid #ddd;
+    margin: 0px;
+    width: 40px;
+    height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 11px 0;
+    background: #eee;
+}
+
+.value-button:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+
+/*media querys*/
+
+/*Media para mostrar el botón en pantallas menores de 574px*/
+@media only screen and (max-width:574px) {
+    .boton-subir {
+        display: inline;
+    }
+}

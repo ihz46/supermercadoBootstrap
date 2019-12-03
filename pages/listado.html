@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- BASE-->
+    <base href="/">
+
+    <title>Supermercado</title>
+    <!-- ICONO WEB -->
+    <link rel="icon" type="image/png" href="img/hiclipart.com.png">
+
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+    <!-- ESTILOS BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    <!-- DATATABLES -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+
+    <!-- FUENTE MONSTSERRAT-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- ESTILOS PROPIOS-->
+    <link rel="stylesheet" href="css/styles.css">
+
+ 
+
+</head>
+
+<body id="page-top">
+
+    <header>
+
+        <nav class=" navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/listado.html">Listado de productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/formulario.html">Añadir producto</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="pages/login.html">Login</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- FIN DEL CONTAINER-->
+        </nav>
+
+
+
+
+    </header>
+    <!-- FIN DEL HEADER -->
+
+    <main class="container bg-light">
+        <div class="card shadow mb-4">
+            
+            <div class="card-header py-3">
+                <h1 class="font-weight-bold text-primary">LISTADO DE PRODUCTOS</h6>
+            </div>
+
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered dataTable" name="mitabla" id="mitabla" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>ID PRODUCTO</th>
+                                <th>NOMBRE</th>
+                                <th>IMAGEN</th>
+                                <th>PRECIO</th>
+                                <th>DESCUENTO</th>
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr>
+                                <th>ID PRODUCTO</th>
+                                <th>NOMBRE</th>
+                                <th>IMAGEN</th>
+                                <th>PRECIO</th>
+                                <th>DESCUENTO</th>
+                            </tr>
+                        </tfoot>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><img src="img/leche semidesnatada.jpg" alt="leche semidesnatada"></td>
+                                <td>Leche semidesnatada</td>
+                                <td>2.50€</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><img src="img/patatas campesinas.jpg" alt="patatas lays campesinas"></td>
+                                <td>Patatas lays campesinas</td>
+                                <td>1.20€</td>
+                                <td>10%</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><img 
+                                        src="img/patatas_fritch.jpg"
+                                        alt="patatas fritas"></td>
+                                <td>Patatas fritas frit</td>
+                                <td>1.60€</td>
+                                <td>30%</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><img src="img/aceite carbonell.jpg"
+                                        alt="aceite carbonell"></td>
+                                <td>Aceite carbonell virgen extra</td>
+                                <td>3.60€</td>
+                                <td>15%</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><img src="img/aquarius.jpg"
+                                        alt="botella aquarius limon"></td>
+                                <td>Aquarius de limón</td>
+                                <td>1.55€</td>
+                                <td>5%  </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td><img src="img/pimientos.jpg" alt="pimientos verdes"></td>
+                                <td>Pimientos verdes</td>
+                                <td>7.39€/kg</td>
+                                <td>2%</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td><img src="img/ketchup.jpg" alt="pimientos verdes"></td>
+                                <td>Ketchup Heinz</td>
+                                <td>2.50€</td>
+                                <td>4%</td>
+                            </tr>
+                        </tbody>
+                        <!--FIN DEL TBODY-->
+                    </table>
+                    <!-- FIN DE LA TABLA-->
+                </div>
+            </div>
+        </div>
+
+    
+    </main>
+    <!--FIN DEL MAIN-->
+
+    <footer class="bg-primary">
+        <div class="container">
+            <!--ENLACES-->
+            <row class="row justify-content-center text-center ">
+                <div class="col-md-2">
+                    <a href="pages/politica.html">Política de privacidad</a>
+                </div>
+        
+                <div class="col-md-2 ">
+                    <a href="pages/contacto.html">Contacto</a>
+                </div>
+        
+                <div class="col-md-2">
+                    <a href="pages/localizacion.html">Localización</a>
+                </div>
+            </row>
+        
+            <!-- REDES SOCIALES-->
+            <row class="row text-center justify-content-center">
+                <div class="col-md-1">
+                    <a href="#"><i class="fab fa-facebook iconos-footer"></i></i></a>
+                </div>
+                <div class="col-md-1">
+                    <a href="#"><i class="fab fa-twitter iconos-footer"></i></a>
+                </div>
+            </row>
+        
+            <!--COPYRIGHT-->
+            <row class="row text-center justify-content-center">
+                <div class="row mt-10">
+                    <p>&copy; 2019 por Iñigo Hernández</p>
+                </div>
+            </row>
+        
+        </div>
+        <!--FIN DE FOOTER.CONTAINER-->
+
+        <!-- BOTÓN SUBIR -->
+        <a href="#" id="js_up" class="boton-subir">
+            <!-- link del icono http://fontawesome.io/icon/rocket/ -->
+            <i class="fas fa-sort-up" aria-hidden="true"></i>
+        
+        </a>
+
+    </footer>
+    <!-- FIN DEL FOOTER-->
+
+
+  
+   
+    <!-- SCRIPTS BOOTSTRAP-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- SCRIPT DATATABLES-->
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+ 
+    <script src="js/main.js"></script>
+
+    
+   
+</body>
+
+</html>

@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Supermercado</title>
+    
+<!-- ICONO WEB -->
+<link rel="icon" type="image/png" href="img/hiclipart.com.png">
+
+
+<!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+<!-- ESTILOS BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<!-- FUENTE MONSTSERRAT-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+<!-- ESTILOS PROPIOS-->
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body id="page-top">
+
+    <header>
+       
+            <nav class=" navbar navbar-expand-lg navbar-dark bg-primary">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">Inicio</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/listado.html">Listado de productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/formulario.html">Añadir producto</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="pages/login.html">Login</a>
+                            </li>
+            
+                        </ul>
+                </div>
+                <!-- FIN DEL CONTAINER-->
+            </nav>
+
+    </header>
+    <!-- FIN DEL HEADER -->
+
+    <main class="container">
+        <h1 class="font-weight-bold text-primary">PRODUCTOS</h6>
+
+        <div class="row">
+            <div class="col">
+                <div class="card producto">
+                    <div class="descuento">
+                        20%
+                    </div>
+                    <img class="imagen" src="img/beefeater-london-dry-gin.jpg" alt="imagen ginebra">
+                    <div class="row ml-1">
+                        <div class="col precio-tachado">13,35</div>
+                        <div class="precio-final">12,95€</div>
+                
+                    </div>
+                    <div class="row text-secondary ml-1">
+                        <div class="col">(18,50€ / Litro)</div>
+                    </div>
+                    <div class="row">
+                        <div class="col info-producto ml-3">BEEFEATER ginebra <br>
+                            inglesa botella 70cl</div>
+                    </div>
+                
+                    <form class="cantidad">
+                        <div class="row justify-content-center">
+                            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                            <input type="number" id="number" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                        </div>
+                    </form>
+                
+                    <button class="button bg-success letra-boton">AÑADIR AL CARRO</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card producto">
+                    <div class="descuento">
+                        20%
+                    </div>
+                    <img class="imagen" src="img/puertodeindians.jpg" alt="imagen ginebra">
+                    <div class="row ml-1">
+                        <div class="col precio-tachado">22,25€</div>
+                        <div class="precio-final">16,85€</div>
+            
+                    </div>
+                    <div class="row text-secondary ml-1">
+                        <div class="col">(18,50€ / Litro)</div>
+                    </div>
+                    <div class="row">
+                        <div class="col info-producto ml-3">PUERTO INDIAS ginebra <br>
+                            botella 70cl</div>
+                    </div>
+            
+                    <form class="cantidad">
+                        <div class="row justify-content-center">
+                            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                            <input type="number" id="number" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                        </div>
+                    </form>
+            
+                    <button class="button bg-success letra-boton">AÑADIR AL CARRO</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card producto">
+                    <div class="descuento">
+                        10%
+                    </div>
+                    <img class="imagen" src="img/eristoff.jpg" alt="imagen ginebra">
+                    <div class="row ml-1">
+                        <div class="col precio-tachado">10,20€</div>
+                        <div class="precio-final">9,80€</div>
+            
+                    </div>
+                    <div class="row text-secondary ml-1">
+                        <div class="col">(12,50€ / Litro)</div>
+                    </div>
+                    <div class="row">
+                        <div class="col info-producto ml-3">VOZKA eristoff <br>
+                            botella 70cl</div>
+                    </div>
+            
+                    <form class="cantidad">
+                        <div class="row justify-content-center">
+                            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                            <input type="number" id="number" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                        </div>
+                    </form>
+            
+                    <button class="button bg-success letra-boton">AÑADIR AL CARRO</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card producto">
+                    <div class="descuento">
+                        20%
+                    </div>
+                    <img class="imagen" src="img/barcelo.jpg" alt="imagen ron">
+                    <div class="row ml-1">
+                        <div class="col precio-tachado">21,50€</div>
+                        <div class="precio-final">17,60€</div>
+            
+                    </div>
+                    <div class="row text-secondary ml-1">
+                        <div class="col">(18,50€ / Litro)</div>
+                    </div>
+                    <div class="row">
+                        <div class="col info-producto ml-3">BARCELO ron <br>
+                            botella 70cl</div>
+                    </div>
+            
+                    <form class="cantidad">
+                        <div class="row justify-content-center">
+                            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                            <input type="number" id="number" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                        </div>
+                    </form>
+            
+                    <button class="button bg-success letra-boton">AÑADIR AL CARRO</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card producto">
+                    <div class="descuento">
+                        15%
+                    </div>
+                    <img class="imagen" src="img/ballantines-437507.png" alt="imagen whisky">
+                    <div class="row ml-1">
+                        <div class="col precio-tachado">17,68€</div>
+                        <div class="precio-final">15,25€</div>
+            
+                    </div>
+                    <div class="row text-secondary ml-1">
+                        <div class="col">(19,30€ / Litro)</div>
+                    </div>
+                    <div class="row">
+                        <div class="col info-producto ml-3">BALLANTINES whisky <br>
+                            escpocés botella 70cl</div>
+                    </div>
+            
+                    <form class="cantidad">
+                        <div class="row justify-content-center">
+                            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                            <input type="number" id="number" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                        </div>
+                    </form>
+            
+                    <button class="button bg-success letra-boton">AÑADIR AL CARRO</button>
+                </div>
+            </div>
+                                
+        </div>
+        <!-- FIN DEL ROW -->
+
+
+        <div class="row">
+            <div class="col">
+                <div class="card producto">
+                    <div class="descuento">
+                        10%
+                    </div>
+                    <img class="imagen" src="img/polroger.jpg" alt="imagen champagne">
+                    <div class="row ml-1">
+                        <div class="col precio-tachado">99.20€</div>
+                        <div class="precio-final">75,80€</div>
+        
+                    </div>
+                    <div class="row text-secondary ml-1">
+                        <div class="col">(100,50€ / Litro)</div>
+                    </div>
+                    <div class="row">
+                        <div class="col info-producto ml-3">POL ROGER champagne <br>
+                         botella 70cl</div>
+                    </div>
+        
+                    <form class="cantidad">
+                        <div class="row justify-content-center">
+                            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                            <input type="number" id="number" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                        </div>
+                    </form>
+        
+                    <button class="button bg-success letra-boton">AÑADIR AL CARRO</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card producto">
+                    <div class="descuento">
+                        30%
+                    </div>
+                    <img class="imagen" src="img/peche.jpg" alt="imagen ginebra">
+                    <div class="row ml-1">
+                        <div class="col precio-tachado">10,58€</div>
+                        <div class="precio-final">7,75€</div>
+        
+                    </div>
+                    <div class="row text-secondary ml-1">
+                        <div class="col">(15,50€ / Litro)</div>
+                    </div>
+                    <div class="row">
+                        <div class="col info-producto ml-3">PECHE licor <br>
+                            botella 70cl</div>
+                    </div>
+        
+                    <form class="cantidad">
+                        <div class="row justify-content-center">
+                            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                            <input type="number" id="number" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                        </div>
+                    </form>
+        
+                    <button class="button bg-success letra-boton">AÑADIR AL CARRO</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card producto">
+                    <div class="descuento">
+                        10%
+                    </div>
+                    <img class="imagen" src="img/vinareal.jpg" alt="imagen ginebra">
+                    <div class="row ml-1">
+                        <div class="col precio-tachado">32,25€</div>
+                        <div class="precio-final">26,85€</div>
+        
+                    </div>
+                    <div class="row text-secondary ml-1">
+                        <div class="col">(45,50€ / Litro)</div>
+                    </div>
+                    <div class="row">
+                        <div class="col info-producto ml-3">VIÑA REAL crianza <br>
+                             botella 70cl</div>
+                    </div>
+        
+                    <form class="cantidad">
+                        <div class="row justify-content-center">
+                            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                            <input type="number" id="number" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                        </div>
+                    </form>
+        
+                    <button class="button bg-success letra-boton">AÑADIR AL CARRO</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card producto">
+                    <div class="descuento">
+                        20%
+                    </div>
+                    <img class="imagen" src="img/baines.jpg" alt="imagen ginebra">
+                    <div class="row ml-1">
+                        <div class="col precio-tachado">22,30€</div>
+                        <div class="precio-final">17,55€</div>
+        
+                    </div>
+                    <div class="row text-secondary ml-1">
+                        <div class="col">(29,50€ / Litro)</div>
+                    </div>
+                    <div class="row">
+                        <div class="col info-producto ml-3">BAINES pacharán <br>
+                            botella 70cl</div>
+                    </div>
+        
+                    <form class="cantidad">
+                        <div class="row justify-content-center">
+                            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                            <input type="number" id="number" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                        </div>
+                    </form>
+        
+                    <button class="button bg-success letra-boton">AÑADIR AL CARRO</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card producto">
+                    <div class="descuento">
+                        20%
+                    </div>
+                    <img class="imagen" src="img/AUSTUM.jpg" alt="imagen verdejo">
+                    <div class="row ml-1">
+                        <div class="col precio-tachado">9,21€</div>
+                        <div class="precio-final">7,52€</div>
+        
+                    </div>
+                    <div class="row text-secondary ml-1">
+                        <div class="col">(10,73€ / Litro)</div>
+                    </div>
+                    <div class="row">
+                        <div class="col info-producto ml-3">AUSTUM verdejo <br>
+                            botella 70cl</div>
+                    </div>
+        
+                    <form class="cantidad">
+                        <div class="row justify-content-center">
+                            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                            <input type="number" id="number" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                        </div>
+                    </form>
+        
+                    <button class="button bg-success letra-boton">AÑADIR AL CARRO</button>
+                </div>
+            </div>
+                
+        </div>
+        <!--FIN DEL ROW-->
+
+        <div class="row">
+            <div class="col">
+                <div class="card producto">
+                    <div class="descuento">
+                        20%
+                    </div>
+                    <img class="imagen" src="img/beefeater-london-dry-gin.jpg" alt="imagen ginebra">
+                    <div class="row ml-1">
+                        <div class="col precio-tachado">13,35</div>
+                        <div class="precio-final">12,95€</div>
+        
+                    </div>
+                    <div class="row text-secondary ml-1">
+                        <div class="col">(18,50€ / Litro)</div>
+                    </div>
+                    <div class="row">
+                        <div class="col info-producto ml-3">BEEFEATER ginebra <br>
+                            inglesa botella 70cl</div>
+                    </div>
+        
+                    <form class="cantidad">
+                        <div class="row justify-content-center">
+                            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                            <input type="number" id="number" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                        </div>
+                    </form>
+        
+                    <button class="button bg-success letra-boton">AÑADIR AL CARRO</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card producto">
+                    <div class="descuento">
+                        20%
+                    </div>
+                    <img class="imagen" src="img/puertodeindians.jpg" alt="imagen ginebra">
+                    <div class="row ml-1">
+                        <div class="col precio-tachado">22,25€</div>
+                        <div class="precio-final">16,85€</div>
+        
+                    </div>
+                    <div class="row text-secondary ml-1">
+                        <div class="col">(18,50€ / Litro)</div>
+                    </div>
+                    <div class="row">
+                        <div class="col info-producto ml-3">PUERTO INDIAS ginebra <br>
+                            botella 70cl</div>
+                    </div>
+        
+                    <form class="cantidad">
+                        <div class="row justify-content-center">
+                            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                            <input type="number" id="number" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                        </div>
+                    </form>
+        
+                    <button class="button bg-success letra-boton">AÑADIR AL CARRO</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card producto">
+                    <div class="descuento">
+                        10%
+                    </div>
+                    <img class="imagen" src="img/eristoff.jpg" alt="imagen ginebra">
+                    <div class="row ml-1">
+                        <div class="col precio-tachado">10,20€</div>
+                        <div class="precio-final">9,80€</div>
+        
+                    </div>
+                    <div class="row text-secondary ml-1">
+                        <div class="col">(12,50€ / Litro)</div>
+                    </div>
+                    <div class="row">
+                        <div class="col info-producto ml-3">VOZKA eristoff <br>
+                            botella 70cl</div>
+                    </div>
+        
+                    <form class="cantidad">
+                        <div class="row justify-content-center">
+                            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                            <input type="number" id="number" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                        </div>
+                    </form>
+        
+                    <button class="button bg-success letra-boton">AÑADIR AL CARRO</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card producto">
+                    <div class="descuento">
+                        20%
+                    </div>
+                    <img class="imagen" src="img/barcelo.jpg" alt="imagen ron">
+                    <div class="row ml-1">
+                        <div class="col precio-tachado">21,50€</div>
+                        <div class="precio-final">17,60€</div>
+        
+                    </div>
+                    <div class="row text-secondary ml-1">
+                        <div class="col">(18,50€ / Litro)</div>
+                    </div>
+                    <div class="row">
+                        <div class="col info-producto ml-3">BARCELO ron <br>
+                            botella 70cl</div>
+                    </div>
+        
+                    <form class="cantidad">
+                        <div class="row justify-content-center">
+                            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                            <input type="number" id="number" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                        </div>
+                    </form>
+        
+                    <button class="button bg-success letra-boton">AÑADIR AL CARRO</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card producto">
+                    <div class="descuento">
+                        15%
+                    </div>
+                    <img class="imagen" src="img/ballantines-437507.png" alt="imagen whisky">
+                    <div class="row ml-1">
+                        <div class="col precio-tachado">17,68€</div>
+                        <div class="precio-final">15,25€</div>
+        
+                    </div>
+                    <div class="row text-secondary ml-1">
+                        <div class="col">(19,30€ / Litro)</div>
+                    </div>
+                    <div class="row">
+                        <div class="col info-producto ml-3">BALLANTINES whisky <br>
+                            escpocés botella 70cl</div>
+                    </div>
+        
+                    <form class="cantidad">
+                        <div class="row justify-content-center">
+                            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                            <input type="number" id="number" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                        </div>
+                    </form>
+        
+                    <button class="button bg-success letra-boton">AÑADIR AL CARRO</button>
+                </div>
+            </div>
+        
+        </div>
+        <!-- FIN DEL ROW -->
+        
+        
+        <div class="row">
+            <div class="col">
+                <div class="card producto">
+                    <div class="descuento">
+                        10%
+                    </div>
+                    <img class="imagen" src="img/polroger.jpg" alt="imagen champagne">
+                    <div class="row ml-1">
+                        <div class="col precio-tachado">99.20€</div>
+                        <div class="precio-final">75,80€</div>
+        
+                    </div>
+                    <div class="row text-secondary ml-1">
+                        <div class="col">(100,50€ / Litro)</div>
+                    </div>
+                    <div class="row">
+                        <div class="col info-producto ml-3">POL ROGER champagne <br>
+                            botella 70cl</div>
+                    </div>
+        
+                    <form class="cantidad">
+                        <div class="row justify-content-center">
+                            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                            <input type="number" id="number" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                        </div>
+                    </form>
+        
+                    <button class="button bg-success letra-boton">AÑADIR AL CARRO</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card producto">
+                    <div class="descuento">
+                        30%
+                    </div>
+                    <img class="imagen" src="img/peche.jpg" alt="imagen ginebra">
+                    <div class="row ml-1">
+                        <div class="col precio-tachado">10,58€</div>
+                        <div class="precio-final">7,75€</div>
+        
+                    </div>
+                    <div class="row text-secondary ml-1">
+                        <div class="col">(15,50€ / Litro)</div>
+                    </div>
+                    <div class="row">
+                        <div class="col info-producto ml-3">PECHE licor <br>
+                            botella 70cl</div>
+                    </div>
+        
+                    <form class="cantidad">
+                        <div class="row justify-content-center">
+                            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                            <input type="number" id="number" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                        </div>
+                    </form>
+        
+                    <button class="button bg-success letra-boton">AÑADIR AL CARRO</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card producto">
+                    <div class="descuento">
+                        10%
+                    </div>
+                    <img class="imagen" src="img/vinareal.jpg" alt="imagen ginebra">
+                    <div class="row ml-1">
+                        <div class="col precio-tachado">32,25€</div>
+                        <div class="precio-final">26,85€</div>
+        
+                    </div>
+                    <div class="row text-secondary ml-1">
+                        <div class="col">(45,50€ / Litro)</div>
+                    </div>
+                    <div class="row">
+                        <div class="col info-producto ml-3">VIÑA REAL crianza <br>
+                            botella 70cl</div>
+                    </div>
+        
+                    <form class="cantidad">
+                        <div class="row justify-content-center">
+                            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                            <input type="number" id="number" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                        </div>
+                    </form>
+        
+                    <button class="button bg-success letra-boton">AÑADIR AL CARRO</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card producto">
+                    <div class="descuento">
+                        20%
+                    </div>
+                    <img class="imagen" src="img/baines.jpg" alt="imagen ginebra">
+                    <div class="row ml-1">
+                        <div class="col precio-tachado">22,30€</div>
+                        <div class="precio-final">17,55€</div>
+        
+                    </div>
+                    <div class="row text-secondary ml-1">
+                        <div class="col">(29,50€ / Litro)</div>
+                    </div>
+                    <div class="row">
+                        <div class="col info-producto ml-3">BAINES pacharán <br>
+                            botella 70cl</div>
+                    </div>
+        
+                    <form class="cantidad">
+                        <div class="row justify-content-center">
+                            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                            <input type="number" id="number" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                        </div>
+                    </form>
+        
+                    <button class="button bg-success letra-boton">AÑADIR AL CARRO</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card producto">
+                    <div class="descuento">
+                        20%
+                    </div>
+                    <img class="imagen" src="img/AUSTUM.jpg" alt="imagen verdejo">
+                    <div class="row ml-1">
+                        <div class="col precio-tachado">9,21€</div>
+                        <div class="precio-final">7,52€</div>
+        
+                    </div>
+                    <div class="row text-secondary ml-1">
+                        <div class="col">(10,73€ / Litro)</div>
+                    </div>
+                    <div class="row">
+                        <div class="col info-producto ml-3">AUSTUM verdejo <br>
+                            botella 70cl</div>
+                    </div>
+        
+                    <form class="cantidad">
+                        <div class="row justify-content-center">
+                            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                            <input type="number" id="number" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                        </div>
+                    </form>
+        
+                    <button class="button bg-success letra-boton">AÑADIR AL CARRO</button>
+                </div>
+            </div>
+        
+        </div>
+        <!--FIN DEL ROW-->
+
+
+       
+                              
+        
+
+
+    </main>
+<!--FIN DEL MAIN-->
+
+    <footer class="bg-primary">
+        <div class="container">
+            <!--ENLACES-->
+            <row class="row justify-content-center text-center ">
+                <div class="col-md-2">
+                    <a href="pages/politica.html">Política de privacidad</a>
+                </div>
+                    
+                <div class="col-md-2 ">
+                    <a href="pages/contacto.html">Contacto</a>
+                </div>
+         
+                <div class="col-md-2">
+                    <a href="pages/localizacion.html">Localización</a>
+                </div>
+            </row>
+
+            <!-- REDES SOCIALES-->
+            <row class="row text-center justify-content-center">
+                <div class="col-md-1">
+                    <a href="#"><i class="fab fa-facebook iconos-footer"></i></i></a>
+                </div>
+                <div class="col-md-1">
+                    <a href="#"><i class="fab fa-twitter iconos-footer"></i></a>
+                </div>
+            </row>
+
+            <!--COPYRIGHT-->
+            <row class="row text-center justify-content-center">
+                <div class="row mt-10">
+                    <p>&copy; 2019 por Iñigo Hernández</p>
+                </div>
+            </row>
+
+        </div>
+        <!--FIN DE FOOTER.CONTAINER-->
+
+        <!-- BOTÓN SUBIR -->
+        <a href="#" id="js_up" class="boton-subir">
+            <!-- link del icono http://fontawesome.io/icon/rocket/ -->
+            <i class="fas fa-sort-up"  aria-hidden="true"></i>
+            
+        </a>
+
+    </footer>
+<!-- FIN DEL FOOTER-->
+
+
+
+<!-- SCRIPTS BOOTSTRAP-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+<!-- SCRIPT DATATABLES-->
+    <script src="cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+
+<!-- SCRIPT PERSONAL-->
+    <script src="js/main.js"></script>
+</body>
+</html>
